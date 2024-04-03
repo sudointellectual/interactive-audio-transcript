@@ -44,7 +44,6 @@ function App() {
     <div className="App">
         <nav>
             <ul>
-                <li><a href="#speakers">See Contributor Information</a></li>
                 <li><a onClick={(e) => document.documentElement.scrollTop = 0 }>To Top</a></li>
             </ul>
         </nav>
