@@ -1,3 +1,16 @@
+# Interactive Audio Transcript
+
+This is a work in progress.
+
+# Todo
+
+Search
+Comprehensive filtering
+
+# Thank you
+
+Thank you to `contours` for the inspiration [https://github.com/contours/react-transcript-player] and the Southern Oral History Program for the conversation.json file and audio [https://dc.lib.unc.edu/cdm/compoundobject/collection/sohp/id/8162/rec/2]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
