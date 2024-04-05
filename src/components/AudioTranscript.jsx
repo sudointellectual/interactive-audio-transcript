@@ -1,6 +1,11 @@
 function AudioTranscript(props) {
     let audio = document.getElementsByTagName('audio')[0]
 
+    const handleClick = (start) => {
+        audio.currentTime = start
+        audio.play()
+    }
+
     return (
         <div className="component" id="AudioTranscript">
             {props.turns &&
@@ -17,9 +22,7 @@ function AudioTranscript(props) {
                                     return (
                                         <button
                                             key={key}
-                                            onClick={(e) =>
-                                                (audio.currentTime = el.start)
-                                            }
+                                            onClick={() => handleClick(el.start)}
                                         >
                                             {el.text} &nbsp;
                                         </button>
