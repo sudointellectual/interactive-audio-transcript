@@ -1,4 +1,4 @@
-function AudioTranscript(props) {
+function AudioTranscript({speakers, turns}) {
     let audio = document.getElementsByTagName('audio')[0]
 
     const handleClick = (start) => {
@@ -8,13 +8,12 @@ function AudioTranscript(props) {
 
     return (
         <div className="component" id="AudioTranscript">
-            {props.turns &&
-                props.turns.map((turn, key) => {
+            {turns && turns.map((turn, key) => {
                     return (
-                        <div>
+                        <div key={key}>
                             <h3 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-2xl dark:text-white">
                                 {' '}
-                                {props.speakers[turn.speaker]}:{' '}
+                                {speakers[turn.speaker]}:{' '}
                             </h3>
 
                             {turn.speech &&

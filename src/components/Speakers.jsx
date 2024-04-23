@@ -1,4 +1,4 @@
-const Speakers = (props) => {
+const Speakers = ({speakers}) => {
     return (
         <div id="speakers" className="Speakers">
             <h2 className="text-4xl font-extrabold dark:text-white">
@@ -15,8 +15,7 @@ const Speakers = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {props.speakers &&
-                            props.speakers.map((val, key) => {
+                        {speakers && speakers.map((val, key) => {
                                 return (
                                     <tr
                                         className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
